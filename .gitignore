@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# Build output
+build/
+dist/
+*.spec
+
+# Local data (never commit personal tasks)
+*.db
+*.db-journal
+*.bak
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+.Rhistory

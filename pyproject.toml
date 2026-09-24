@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "planner-pro"
+version = "1.0.0"
+description = "A bilingual (English / Persian) desktop planner with a Jalali calendar and task reminders"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = [
+    "PyQt6>=6.5",
+    "jdatetime>=4.1",
+    "winotify>=1.1; sys_platform == 'win32'",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "pyinstaller>=6"]
+
+[project.scripts]
+planner-pro = "planner_pro.app:main"
+
+[tool.setuptools]
+packages = ["planner_pro"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

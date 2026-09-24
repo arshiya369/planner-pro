@@ -1,0 +1,3 @@
+PyQt6>=6.5
+jdatetime>=4.1
+winotify>=1.1; sys_platform == "win32"
